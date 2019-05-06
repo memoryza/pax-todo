@@ -1,0 +1,31 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "jquery": "^3.4.1",
+    "prepack": "^0.2.54",
+    "prepack-webpack-plugin": "^1.1.2",
+    "redux": "^4.0.1",
+    "rollup-plugin-prepack": "^1.0.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "px": "time px -E src/index.js dist/index.js -W",
+    "rollup": "rollup -c -w",
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js",
+    "prepack": "rollup -c prepack.config.js -w",
+    "parcel": "parcel src/index.js  -d dist --no-source-maps"
+  },
+  "author": "",
+  "license": "ISC"
+}
