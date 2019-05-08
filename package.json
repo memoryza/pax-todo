@@ -1,7 +1,7 @@
 {
   "name": "todolist",
   "version": "1.0.0",
-  "description": "",
+  "description": "pax and other build tools todo demo",
   "main": "src/index.js",
   "dependencies": {
     "ejs": "^2.6.1",
@@ -26,6 +26,6 @@
     "prepack": "rollup -c prepack.config.js -w",
     "parcel": "parcel src/index.js  -d dist --no-source-maps"
   },
-  "author": "",
+  "author": "memoryza",
   "license": "ISC"
 }
