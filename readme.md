@@ -5,7 +5,7 @@
 | rollup    | 540-890ms | 295/304kb | 300+ms |
 | pax    | 16-20ms | 308kb | 16ms | 
 | webpack4    | 330ms+ | 347kb | 10ms+- |
-| webpack4-dll    | 140ms+ | 10.1kb（库的大小被抽象了） | 10ms+- |
+| webpack4-dll    | 140ms+ | 10.1kb（库的大小被抽到了vendor里） | 10ms+- |
 | parcel |  450-1300ms | 317k | 变动好大，后续再大项目里看看基本上在30-200ms|
 
 
