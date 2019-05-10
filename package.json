@@ -1,7 +1,7 @@
 {
   "name": "todolist",
   "version": "1.0.0",
-  "description": "pax and other build tools todo demo",
+  "description": "",
   "main": "src/index.js",
   "dependencies": {
     "ejs": "^2.6.1",
@@ -10,7 +10,7 @@
     "prepack-webpack-plugin": "^1.1.2",
     "redux": "^4.0.1",
     "rollup-plugin-prepack": "^1.0.0",
-    "webpack": "^4.30.0",
+    "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   },
   "devDependencies": {
@@ -23,9 +23,10 @@
     "px": "time px -E src/index.js dist/index.js -W",
     "rollup": "rollup -c -w",
     "webpack": "node_modules/.bin/webpack --config webpack.config.js",
+    "webpackdll": "node_modules/.bin/webpack --config webpack.dll.config.js && node_modules/.bin/webpack --config webpack.config.js --ext=dll_build",
     "prepack": "rollup -c prepack.config.js -w",
     "parcel": "parcel src/index.js  -d dist --no-source-maps"
   },
-  "author": "memoryza",
+  "author": "",
   "license": "ISC"
 }
